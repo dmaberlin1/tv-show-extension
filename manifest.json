@@ -1,0 +1,23 @@
+{
+  "name": "tv-show-extension",
+  "description": "",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": "src/assets/icon.png",
+    "default_popup": "index.html",
+    "default_title": "Open Extension App"
+  },
+  "background": {
+    "service_worker": "src/background.tsx",
+    "type": "module"
+  },
+  "permissions": [
+    "background",
+    "contextMenus",
+    "bookmarks",
+    "tabs",
+    "storage",
+    "history"
+  ]
+}
